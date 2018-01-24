@@ -17,6 +17,8 @@ public class liaofa extends Activity {
         Button btn1=(Button) findViewById(R.id.back);
          Button btn2=(Button) findViewById(R.id.xingwei);
         Button btn3=(Button) findViewById(R.id.cuimian);
+        Button btn7=(Button) findViewById(R.id.lixing);
+        
          btn4=(Button) findViewById(R.id.riji);
         btn4.setOnClickListener(new Click());
         btn1.setText("<");
@@ -47,7 +49,16 @@ public class liaofa extends Activity {
     			startActivity(intent);
     			finish();
     		}});
-        
+        btn7.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				// TODO 自动生成的方法存根
+				//此处为返回界面代码
+				Intent intent=new Intent(liaofa.this,lixing.class);
+				startActivity(intent);
+				finish();
+			}});
   
 }
 
