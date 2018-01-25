@@ -12,12 +12,14 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class EmulateActivity extends Activity implements OnClickListener  {
 	
-	ImageButton btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,submit,back;
+	ImageButton btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10;
+	Button back,submit;
 	int flag = 0;
 	
 	private DBOpenHelper helper;
@@ -51,8 +53,8 @@ public class EmulateActivity extends Activity implements OnClickListener  {
 		btn8 = (ImageButton)findViewById(R.id.btn8);
 		btn9 = (ImageButton)findViewById(R.id.btn9);
 		btn10 = (ImageButton)findViewById(R.id.btn10);
-		submit = (ImageButton)findViewById(R.id.submit);
-		back = (ImageButton) findViewById(R.id.button1);
+		submit = (Button)findViewById(R.id.submit);
+		back = (Button) findViewById(R.id.button1);
 		
 		back.setOnClickListener(new View.OnClickListener(){
 			@Override
